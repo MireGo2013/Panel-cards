@@ -1,0 +1,68 @@
+* {
+  font-family: "Big Shoulders Stencil Display", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(170, 7, 7, 1), rgba(12, 12, 12, 0.9));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#panel_wrapper {
+  width: 95%;
+  height: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.card {
+  flex: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  border-radius: 20px;
+  margin: 5px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out 0.2s;
+}
+
+.card_1 {
+  background-image: url("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfGFldTZyTC1qNmV3fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+}
+.card_2 {
+  background-image: url("https://images.unsplash.com/photo-1464699908537-0954e50791ee?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fGFldTZyTC1qNmV3fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+}
+.card_3 {
+  background-image: url("https://images.unsplash.com/photo-1603074255852-8533d6fbd012?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM5fGFldTZyTC1qNmV3fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+}
+.card_4 {
+  background-image: url("https://images.unsplash.com/photo-1623527044775-f6a83ca73a0b?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQ5fGFldTZyTC1qNmV3fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+}
+.card_5 {
+  background-image: url("https://images.unsplash.com/photo-1543993751-cd531ccd3928?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDk4fGFldTZyTC1qNmV3fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+}
+
+.card h3 {
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+  font-size: 24px;
+  opacity: 0;
+}
+
+.card.active {
+  flex: 10;
+}
+
+.card.active h3 {
+  opacity: 1;
+  transition: all 0.3s ease-in 0.3s;
+}
